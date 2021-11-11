@@ -1,4 +1,4 @@
-function read() {
+function main() {
     window.alert('Worked');
   }
   

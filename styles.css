@@ -9,7 +9,7 @@
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    text-indent: 1em;
+    text-align: center;
  }
 
 #signIn {
@@ -23,5 +23,42 @@
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
-    text-indent: 13em;
+    text-align: center;
+}
+
+.login-div {
+    margin: auto;
+    width: 171px;
+    background-color: #fff;
+    padding: 60px;
+}
+
+.signin-btn {
+    width: 57.5px;
+}
+
+.signup-btn {
+    margin-left: 12px;
+    width: 70.83px;
+}
+
+.sign-up-or-login {
+    margin-left: 17.12px;
+    margin-top: 5px;
+}
+
+.username {
+    margin-bottom: 7.5px;
+}
+
+.form {
+    margin-bottom: 7.5px;
+}
+
+.options {
+    margin-bottom: 7.5px;
+}
+
+.remember-me {
+    margin-bottom: 5px;
 }

@@ -1,1 +1,4 @@
-window.alert("it worked");
+function blorg() {
+    window.alert('Worked');
+  }
+  

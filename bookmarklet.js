@@ -1,4 +1,4 @@
-var jQueryLib = document.createElement("script");
+javascript:var jQueryLib = document.createElement("script");
 jQueryLib.src = "http://code.jquery.com/jquery-3.6.0.min.js";
 document.body.appendChild(jQueryLib);
 /* Give the browser a short while to load jQuery */

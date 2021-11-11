@@ -26,6 +26,10 @@ function main() {
         x = rs.getPropertyValue('--grey');
         r.style.setProperty('--grey',rs.getPropertyValue('--light'));
         r.style.setProperty('--light',x);
+
+        x = rs.getPropertyValue('--textbox');
+        r.style.setProperty('--textbox',rs.getPropertyValue('--textbox-dark'));
+        r.style.setProperty('--textbox-dark',x);
     }
     document.body.appendChild(darkMode);
 
@@ -51,6 +55,7 @@ function main() {
     usernameDiv.className="username";
     const usernameInput = document.createElement("input");
     usernameInput.type="text";
+    usernameInput.className="username-box";
     usernameInput.placeholder = "Username";
 
     usernameDiv.appendChild(usernameInput);
@@ -60,6 +65,7 @@ function main() {
     passDiv.className="password";
     const passwordInput = document.createElement("input");
     passwordInput.type="password";
+    passwordInput.className="username-box";
     passwordInput.placeholder = "Password";
 
     passDiv.appendChild(passwordInput);

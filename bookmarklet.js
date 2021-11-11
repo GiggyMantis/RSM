@@ -5,6 +5,6 @@ document.body.appendChild(jQueryLib);
 var myCode = setTimeout(function() {
     var url = "reader.js";
         $.getScript("http://localhost:8080/" + url, function() {
-        blorg();
+        read();
         });
     },1000);    

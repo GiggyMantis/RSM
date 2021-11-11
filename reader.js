@@ -1,4 +1,4 @@
-function blorg() {
+function read() {
     window.alert('Worked');
   }
   

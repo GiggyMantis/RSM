@@ -1,4 +1,12 @@
+
 function main() {
+
+
+    if (document.head.getAttribute("data-has-rsm") == "yes") {
+        throw new Error("Already added RSM to this page");
+    } else {
+        document.head.setAttribute("data-has-rsm", "yes");
+    }
 
     const newStyle = document.createElement("link");
     newStyle.rel = "stylesheet";

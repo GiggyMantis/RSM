@@ -1,6 +1,4 @@
-
 function main() {
-
 
     if (document.head.getAttribute("data-has-rsm") == "yes") {
         throw new Error("Already added RSM to this page");
@@ -12,6 +10,24 @@ function main() {
     newStyle.rel = "stylesheet";
     newStyle.href = "http://localhost:8080/styles.css";
     document.head.appendChild(newStyle);
+
+    const darkMode = document.createElement("button");
+    darkMode.innerText = "Toggle Dark Mode";
+    darkMode.className = "darkmode-btn";
+    darkMode.onclick = function(){
+        var r = document.querySelector(':root');
+        var rs = getComputedStyle(r);
+
+        var x;
+        x = rs.getPropertyValue('--white');
+        r.style.setProperty('--white',rs.getPropertyValue('--black'));
+        r.style.setProperty('--black',x);
+
+        x = rs.getPropertyValue('--grey');
+        r.style.setProperty('--grey',rs.getPropertyValue('--light'));
+        r.style.setProperty('--light',x);
+    }
+    document.body.appendChild(darkMode);
 
     const title = document.createElement("div");
     const titleText = document.createTextNode("Welcome to Really Simple Messaging");
@@ -89,4 +105,7 @@ function main() {
     loginDiv.appendChild(signUpOrLogin);
 
     document.body.appendChild(loginDiv);
-  }
+
+    
+}
+

@@ -26,10 +26,9 @@ app.get('/styles.css', function (req, res) {
 app.use(nocache());
 
 var server = app.listen(8080, function () {
-   var host = server.address().address;
    var port = server.address().port;
    
-   console.log("Example app listening at http://%s:%s", host, port)
+   console.log("Running Really Simple Messaging http://127.0.0.1:%s", port)
 })
 
 

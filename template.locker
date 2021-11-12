@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locker>
+    <key>[current public key]</key>
+    <chat>
+        <name>[Randomly Generated Name]</name>
+        <members>[User list by B64 ID deliminated by comma]</members>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+        </keynotice>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+    </chat>
+    <chat>
+        <name>[Randomly Generated Name]</name>
+        <members>[User list by B64 ID deliminated by comma]</members>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+        </keynotice>
+        <item>
+            <text>[text, encoded]</text>
+            <user>[user, b64 ID]</user>
+            <date>[date,utc]</date>
+        </item>
+    </chat>
+</locker>

@@ -2,6 +2,10 @@ const http = require('http');
 const nocache = require('nocache');
 var static = require('node-static');
 
+
+
+
+
 var express = require('express');
 var app = express();
 
@@ -30,9 +34,11 @@ app.get('/template.mailbox', function (req, res) {
 app.use(nocache());
 
 var server = app.listen(8080, function () {
-   var port = server.address().port;
-   
-   console.log("Running Really Simple Messaging http://127.0.0.1:%s", port)
+    var port = server.address().port;
+    console.log("Running Really Simple Messaging http://127.0.0.1:%s", port)
+
+    
+
 })
 
 

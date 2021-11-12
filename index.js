@@ -23,6 +23,10 @@ app.get('/styles.css', function (req, res) {
     file.serve(req,res);
 })
 
+app.get('/template.mailbox', function (req, res) {
+    file.serve(req,res);
+})
+
 app.use(nocache());
 
 var server = app.listen(8080, function () {

@@ -33,6 +33,22 @@ function main() {
     }
     document.body.appendChild(darkMode);
 
+    var r = document.querySelector(':root');
+    var rs = getComputedStyle(r);
+
+    var x;
+    x = rs.getPropertyValue('--white');
+    r.style.setProperty('--white',rs.getPropertyValue('--black'));
+    r.style.setProperty('--black',x);
+
+    x = rs.getPropertyValue('--grey');
+    r.style.setProperty('--grey',rs.getPropertyValue('--light'));
+    r.style.setProperty('--light',x);
+
+    x = rs.getPropertyValue('--textbox');
+    r.style.setProperty('--textbox',rs.getPropertyValue('--textbox-dark'));
+    r.style.setProperty('--textbox-dark',x);
+
     const title = document.createElement("div");
     const titleText = document.createTextNode("Welcome to Really Simple Messaging");
     title.appendChild(titleText);

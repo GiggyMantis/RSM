@@ -1,12 +1,12 @@
 /*semi-unnecessary, as these get overriden as soon as user switches to dark mode and are permanently never used thereafter*/
 
 :root {
-    --white: #1a1a1a;
-    --black: #f8f8f8;
-    --light: rgb(68,68,68);
-    --grey: rgb(211, 211, 211);
-    --textbox-dark: rgb(252, 252, 252);
-    --textbox: rgb(78, 78, 78);
+    --black: #1a1a1a;
+    --white: #f8f8f8;
+    --grey: rgb(68,68,68);
+    --light: rgb(211, 211, 211);
+    --textbox: rgb(252, 252, 252);
+    --textbox-dark: rgb(78, 78, 78);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

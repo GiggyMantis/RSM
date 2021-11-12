@@ -2,7 +2,7 @@
 <locker>
     <key>[current public key]</key>
     <chat>
-        <name>[Randomly Generated Name]</name>
+        <name>[Randomly Generated Chat Name]</name>
         <members>[User list by B64 ID deliminated by comma]</members>
         <item>
             <text>[text, encoded]</text>
@@ -22,7 +22,7 @@
         </item>
     </chat>
     <chat>
-        <name>[Randomly Generated Name]</name>
+        <name>[Randomly Generated Chat Name]</name>
         <members>[User list by B64 ID deliminated by comma]</members>
         <item>
             <text>[text, encoded]</text>
